@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-admin">
+  <div class="header-wrap">
+    <div class="navbar">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">Learnify</a></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html" class="active">Admin</a>
+        </nav>
+        <div class="nav-actions">
+          <input id="userNameInput" class="user-input" placeholder="username"/>
+          <button id="saveUserBtn" class="btn-ghost" style="padding:6px 10px">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <h2 class="section-title">Admin Dashboard</h2>
+    <div class="admin-panel">
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-bottom:8px">
+        <button id="adminResetBtn" class="btn-ghost">Reset All Data</button>
+      </div>
+
+      <h3 class="muted">Users & Progress</h3>
+      <table class="table" id="adminUsersTable">
+        <thead>
+          <tr><th>User</th><th>Completed Tutorials</th><th>Last Quiz</th><th>Messages</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h3 class="muted" style="margin-top:18px">All Messages</h3>
+      <table class="table" id="adminMessagesTable">
+        <thead>
+          <tr><th>User</th><th>Name</th><th>Email</th><th>Message</th><th>Date</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer><p>© 2025 Learnify</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

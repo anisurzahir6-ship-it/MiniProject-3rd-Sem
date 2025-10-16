@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-tutorials">
+  <div class="header-wrap">
+    <div class="navbar">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">Learnify</a></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="tutorials.html" class="active">Tutorials</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+        <div class="nav-actions">
+          <input id="userNameInput" class="user-input" placeholder="username"/>
+          <button id="saveUserBtn" class="btn-ghost" style="padding:6px 10px">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <h2 class="section-title">Interactive Tutorials</h2>
+
+    <div id="tutorialProgressWrap" class="progress-wrapper" style="display:none;">
+      <div class="progress-bar"><div id="tutorialBarFill" class="progress-fill"></div></div>
+      <p id="tutorialProgressLabel" class="muted"></p>
+    </div>
+
+    <div class="tutorial-main">
+      <div class="tutorial-video" id="tutorialVideoArea">
+        <!-- video + transcript area injected by script -->
+      </div>
+
+      <aside class="tutorial-meta">
+        <h3 class="muted">Lessons</h3>
+        <div id="tutorialList" class="tutorial-list"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer><p>© 2025 Learnify</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

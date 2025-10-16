@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-about">
+  <div class="header-wrap">
+    <div class="navbar">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">Learnify</a></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+        <div class="nav-actions">
+          <input id="userNameInput" class="user-input" placeholder="username"/>
+          <button id="saveUserBtn" class="btn-ghost" style="padding:6px 10px">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <h2 class="section-title">About Learnify</h2>
+    <div class="about-content" style="background:rgba(3,8,14,0.6);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)">
+      <p>Learnify is a frontend demo platform designed to teach programming through video tutorials and quizzes. Progress is stored locally (no backend) per username — set your username in the top-right to track your progress.</p>
+    </div>
+  </main>
+
+  <footer><p>© 2025 Learnify</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

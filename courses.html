@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — Courses</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-courses">
+  <div class="header-wrap">
+    <div class="navbar">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">Learnify</a></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html" class="active">Courses</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+        <div class="nav-actions">
+          <input id="userNameInput" class="user-input" placeholder="username"/>
+          <button id="saveUserBtn" class="btn-ghost" style="padding:6px 10px">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <h2 class="section-title">Our Courses</h2>
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="/PythonTutorial.png" alt="Python">
+        <h3>Learn Python — Beginner to Intermediate</h3>
+        <p class="muted">Hands-on Python, problem solving and small projects.</p>
+      </div>
+      <div class="course-card">
+        <img src="/javascript.png" alt="JavaScript">
+        <h3>Master JavaScript</h3>
+        <p class="muted">Modern JS, DOM, async programming and tooling.</p>
+      </div>
+      <div class="course-card">
+        <img src="/htmlcss.png" alt="HTML & CSS">
+        <h3>HTML & CSS for Beginners</h3>
+        <p class="muted">From structure to responsive layouts & visuals.</p>
+      </div>
+      <div class="course-card">
+        <img src="/fullstack.png" alt="Fullstack">
+        <h3>Full-Stack Development in 30 Days</h3>
+        <p class="muted">Project-driven full-stack crash course.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer><p>© 2025 Learnify</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

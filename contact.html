@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-contact">
+  <div class="header-wrap">
+    <div class="navbar">
+      <div class="brand"><a href="index.html" style="color:inherit;text-decoration:none">Learnify</a></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="tutorials.html">Tutorials</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+        <div class="nav-actions">
+          <input id="userNameInput" class="user-input" placeholder="username"/>
+          <button id="saveUserBtn" class="btn-ghost" style="padding:6px 10px">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-content">
+      <form id="contactForm">
+        <input id="contactName" name="name" type="text" placeholder="Your name" required>
+        <input id="contactEmail" name="email" type="email" placeholder="Your email" required>
+        <textarea id="contactMessage" name="message" rows="6" placeholder="Your message" required></textarea>
+        <div style="display:flex;gap:8px;justify-content:flex-end">
+          <button type="submit" class="btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer><p>© 2025 Learnify</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
